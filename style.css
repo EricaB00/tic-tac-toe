@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+  
+    background: rgb(89, 208, 208);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 1rem;
+    color: rgb(35, 34, 34);
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+  }
+  
+  .gameboard {
+    display: grid;
+    grid-template-rows: 125px 125px 125px;
+    grid-template-columns: 125px 125px 125px;
+    gap: 10px;
+  }
+  
+  .gameboard > div {
+    padding: 5px;
+    background-color: blueviolet;
+    border-radius: 3px;
+    place-items: center;
+    outline: 1px solid black;
+    display: grid;
+  }
+  
+  .box {
+    font-size: 50px;
+  }
+  
+  .player-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  
+  input {
+    width: 250px;
+    height: 25px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    margin: 10px 20px;
+  }
+  
+  label {
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 3rem;
+  }
+  
+  button {
+    font-size: 16px;
+    padding: 10px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: blueviolet;
+    color: white;
+  }
+  
+  .display-message {
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    font-size: 25px;
+    margin: 2rem;
+  }
+  
+  
+  .box:hover,
+  button:hover {
+    background: rgb(183, 183, 178);
+  }
+  
